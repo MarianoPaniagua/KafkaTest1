@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.pani.KafkaTest.service.KafkaSender;
 
 @RestController
-@RequestMapping(value = "/javainuse-kafka/")
+@RequestMapping(value = "/kafkamsg/")
 public class ApacheKafkaWebController {
 
 	@Autowired
@@ -19,7 +19,7 @@ public class ApacheKafkaWebController {
 	public String producer(@RequestParam("message") String message) {
 		kafkaSender.send(message);
 
-		return "Message sent to the Kafka Topic java_in_use_topic Successfully";
+		return "Message sent to the Kafka Topic: " + KafkaSender.KAFKA_TOPIC + " Successfully";
 	}
 
 }
