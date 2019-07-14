@@ -40,6 +40,12 @@ public class Post {
 
 	public void setTopic(String topic) {
 		this.topic = topic;
+	}
+
+	@Override
+	public String toString() {
+		return "Post [message=" + message + ", senderId=" + senderId + ", topic=" + topic + "]";
 	};
 
+	
 }
