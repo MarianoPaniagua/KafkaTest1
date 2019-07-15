@@ -1,20 +1,18 @@
-package com.pani.KafkaTest.model;
+package com.pani.KafkaTest.dto;
 
-public class User {
+public class UserDto {
 
 	private String name;
-
-	private String age;
-
+	private String lastName;
 	private Long userId;
 
-	public User() {
+	public UserDto() {
 	}
 
-	public User(String name, String age, Long userId) {
+	public UserDto(String name, String lastName, Long userId) {
 		super();
 		this.name = name;
-		this.age = age;
+		this.lastName = lastName;
 		this.userId = userId;
 	}
 
@@ -26,12 +24,12 @@ public class User {
 		this.name = name;
 	}
 
-	public String getAge() {
-		return age;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setAge(String age) {
-		this.age = age;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public Long getUserId() {

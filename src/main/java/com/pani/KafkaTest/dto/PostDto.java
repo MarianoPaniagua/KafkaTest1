@@ -1,6 +1,6 @@
-package com.pani.KafkaTest.model;
+package com.pani.KafkaTest.dto;
 
-public class Post {
+public class PostDto {
 
 	private String message;
 
@@ -8,10 +8,10 @@ public class Post {
 
 	private String topic;
 
-	public Post() {
+	public PostDto() {
 	}
 
-	public Post(String message, Long senderId, String topic) {
+	public PostDto(String message, Long senderId, String topic) {
 		super();
 		this.message = message;
 		this.senderId = senderId;
@@ -42,10 +42,4 @@ public class Post {
 		this.topic = topic;
 	}
 
-	@Override
-	public String toString() {
-		return "Post [message=" + message + ", senderId=" + senderId + ", topic=" + topic + "]";
-	};
-
-	
 }

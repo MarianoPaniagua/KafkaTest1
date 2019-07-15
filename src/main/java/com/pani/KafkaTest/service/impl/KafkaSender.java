@@ -1,10 +1,10 @@
-package com.pani.KafkaTest.service;
+package com.pani.KafkaTest.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import com.pani.KafkaTest.model.Post;
+import com.pani.KafkaTest.entity.Post;
 
 @Service
 public class KafkaSender {
